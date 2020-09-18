@@ -1,0 +1,63 @@
+html,body {
+
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(blue, pink);
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+
+}
+
+
+.testbox {
+	margin:auto;
+	width: 200px;
+    height: 200px;
+	font-size:15px;
+	border: 2px solid black;
+	text-shadow: 1px 0px red;
+    text-align: center;
+	line-height:200px;
+	flex-shrink: 0;
+}
+
+@keyframes change {
+    0% {  	
+    }
+    100% {
+        background-color: red;
+		font-style:italic;
+		font-size:18px;
+    }
+}
+
+.imgbox {
+	margin:auto;
+	width: 200px;
+    height: 200px;
+	font-size:15px;
+    background: rgb(172, 143, 143);
+	border: 2px solid black;
+    text-align: center;
+	overflow:hidden;
+	transition: border 0.2s linear 0s,width 0.2s linear 0s,height 0.2s linear 0s;
+	flex-shrink: 0;
+
+}
+
+.testbox:hover{
+	cursor:pointer;
+	animation: change 0.1s linear;
+	animation-fill-mode: forwards;
+
+}
+
+.imgbox:hover{
+	cursor:wait;
+	width: 182px;
+    height: 182px;
+	border: 10px solid yellow;
+	
+}
